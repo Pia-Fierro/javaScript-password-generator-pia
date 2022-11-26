@@ -1,4 +1,4 @@
-#JavaScript: Password generator-Pia-project
+# JavaScript: Password generator-Pia-project
 
 ## User Story
 
