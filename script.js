@@ -6,17 +6,17 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword () {
 
-  //* prompt method will display information to the user to decide about the lenght of the password
+  //* prompt method will display information to the user to decide about the lenght of the password.
 
   var userLenght = window.prompt ("Between 8 and 128, how many character your password needs to have?");
   var passwordLenght = (userLenght);
 
   console.log (passwordLenght);
-
-    if (passwordLenght <8 || passwordLenght >128) {
-      window.alert ("Password must have minimum of 8 and maximum of 128 characters, please try again");}
-
-   //* confirm method will display acept or cancel to the user so they can decide about what carachters to include in the password 
+  
+    if (passwordLenght <8 || passwordLenght >128 || isNaN(parseInt(passwordLenght))) {
+      window.alert ("Password must have minimum of 8 and maximum of 128 characters, please try again, how many characters your password needs to have?");} 
+   
+      //* confirm method will display acept or cancel to the user so they can decide about what carachters to include in the password 
 
      else {
       var upperCaseCharacthers = window.confirm ("do you want to include upper case in your password?"); 
