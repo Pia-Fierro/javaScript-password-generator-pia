@@ -29,10 +29,10 @@ THEN the password is either displayed in an alert or written to the page
 ```
 ### Screenshot of deployed application
 
-> ![javaScript-password-generatior-pia]()
+> ![javaScript-password-generatior-pia](./assets/screenshot-password-generator-pia.jpg)
 
 ### Link to deploy application
 
-> [https://](https://)
+> [https://pia-fierro.github.io/javaScript-password-generator-pia/](https://pia-fierro.github.io/javaScript-password-generator-pia/)
 
 

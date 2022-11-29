@@ -14,7 +14,7 @@ function generatePassword () {
   console.log (passwordLenght);
   
     if (passwordLenght <8 || passwordLenght >128 || isNaN(parseInt(passwordLenght))) {
-      window.alert ("Password must have minimum of 8 and maximum of 128 characters, please try again, how many characters your password needs to have?");} 
+      window.alert ("Password must have minimum of 8 and maximum of 128 characters and it must be a number. Please try again.");} 
    
       //* confirm method will display acept or cancel to the user so they can decide about what carachters to include in the password 
 
@@ -29,7 +29,7 @@ function generatePassword () {
       var special = ["!","@","#","$","%","&","(",")","_","+","~","|","}","{","[","]","?",">","<","/"]
       var numbers = ["1","2","3","4","5","6","7","8","9"]
       var options = []
-      
+    
       //* if user does not accepted any of the special critaria then a numeric pasword will be generated randomly 
 
       if (!upperCaseCharacthers && !lowerCaseCharacters && !specialCharacters && !numbersCharacters) {
@@ -45,7 +45,7 @@ function generatePassword () {
         }
         return generatePassword;
       }
-      //* If user choose a mix of carachters for his password from the 4 availables then the concat method will create a new arrey with the chosen mix
+      //* If user choose a mix of carachters for the password from the 4 availables then the concat method will create a new arrey with the chosen mix
       else {
         if (upperCaseCharacthers)
         {var options=upperCase}
